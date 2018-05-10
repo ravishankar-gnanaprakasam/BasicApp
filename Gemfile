@@ -3,6 +3,10 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.22.5'
 gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'faker', '1.0.1'
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
+
 gem 'rake', '< 11.0' #To remove the last_comment error 
 #link https://stackoverflow.com/questions/35893584/nomethoderror-undefined-method-last-comment-after-upgrading-to-rake-11
 #error message
