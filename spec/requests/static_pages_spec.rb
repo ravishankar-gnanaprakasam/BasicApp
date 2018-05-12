@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 
-#visit is a Capybara function to simulate the visiting
+#visit - is a Capybara function to simulate the visiting
 
 describe "StaticPages" do
 

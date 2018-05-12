@@ -30,11 +30,11 @@ class UsersController < ApplicationController
   end
 
   def edit
-    # @user = User.find(params[:id]) #This is handled in the before filter
+    @user = User.find(params[:id]) #This is handled in the before filter
   end
 
   def update
-    #@user = User.find(params[:id]) #This is handled in the before filter
+    @user = User.find(params[:id]) #This is handled in the before filter
     if @user.update_attributes(params[:user])
       flash[:success] = "Profile updated"
       sign_in @user
