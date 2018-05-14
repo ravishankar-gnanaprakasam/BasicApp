@@ -1,8 +1,18 @@
 BasicApp::Application.routes.draw do
 
-  resources :users
+
+  # resources :users
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+  #URIs will look like /users/1/following and /users/1/followers
+
+
   resources :sessions, only: [:new, :create, :destroy]
   resources :microposts, only: [:create, :destroy]
+  resources :relationships, only: [:create, :destroy]
 
 
   #get "users/new"
